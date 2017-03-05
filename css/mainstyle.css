@@ -4,25 +4,15 @@
 * {
 	box-sizing: border-box;
 }
-
-h2 {
-  margin: 0px;
-  padding: 1em;
+body {
+	background-color: #F6F6F6;
 }
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Varela Round", sans-serif;
-  font-size: 1.5em;
-}
-
 p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.95em;
-  line-height: 1.2;
-  color: #3a3a3a;
+
+}
+
+#footer-fix {
+	min-height: calc(100vh - 100px);
 }
 
 .wrapper {
@@ -33,60 +23,157 @@ p {
   Header
 ==================================== */
 header {
-  background-color: #4EACF2;
+  background-color: #1a1a1a;
+	padding: 12px;
+	height: 75px;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	width: 100%;
+	opacity: 0.97;
+}
+
+#header-logo {
+	display: block;
+	float: left;
+	margin-left: 160px;
+	margin-right: 20px;
 }
 
 .page-title {
   color: #fff;
-	display: inline-block;;
-}
-
-.main-nav-bar a {
-  font-family: "Varela Round", sans-serif;
-	padding: 6px 6px;
-	display: block;
-  color: #fff;
-}
-
-.main-nav-bar a:hover {
-	color: blue;
-	opacity: 0.7;
+	font-family: "Varela Round", sans-serif;
+	font-size: 21px;
+	letter-spacing: 0.04em;
+	display: inline-block;
+	float: left;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 15px;
 }
 
 .main-nav-bar {
 	display: inline-block;
+	float: right;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 17px;
 }
 
 .main-nav-bar li {
 	display: inline-block;
-	margin: 0 4px;
 	text-align: right;
-	font-size: 1.1em;
-}
-/* =================================
-  Body
-==================================== */
-.blog-container {
-  background-color: #4e4e4e;
-  text-align: center;
+	font-size: 17px;
 }
 
-.blog-box {
-	width: 45%;
-	margin: 2.5%;
-	float: left;
-	background-color: green;
+.main-nav-bar a {
+  font-family: "Varela Round", sans-serif;
+	font-size: 0.9em;
+	margin: 0 7px;
+  color: #fff;
 	display: block;
 }
 
+.main-nav-bar a:hover {
+	color: white;
+	opacity: 0.7;
+}
+
+/* =================================
+  Body
+==================================== */
+
+/* ==== JUMBOTRON - MAIN MARKETING CONT == */
+
+.main-marketing-img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+
+.blog-container {
+  text-align: center;
+	margin-top: 30px;
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.blog-box {
+	width: 29.333333%;
+	margin: 2%;
+	height: 440px;
+	float: left;
+	background-color: #4A4A4A;
+	/* CHANGE TO #eee WHEN HOVERED!!!*/
+	display: block;
+	position: relative;
+}
+
+.blog-title {
+	font-family: "Varela Round", sans-serif;
+	font-size: 3em;
+	color: #f6f6f6;
+	text-align: left;
+	position: absolute;
+	top: 0;
+	margin: 0;
+	padding: 25px;
+}
+
+.blog-box-para {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 1.15em;
+  line-height: 1.2;
+  color: #F6F6F6;
+	text-align: justify;
+	margin: 25px;
+	position: absolute;
+	top: 215px;
+
+}
+
+
+
+/*=== BLOG BOX TOPIC STYLES ==*/
+
+.bb-exercise {
+	background-color: #2E86AB;
+	width: 100%;
+}
+
+.bb-nutrition {
+	background-color: #A23B72;
+	width: 100%;
+}
+
+.bb-motivation {
+	background-color: #C73E1D;
+	width: 100%;
+}
+
+.bb-challenge {
+	background-color: #DBC283;
+	width: 100%;
+
+}
 /* =================================
   Footer
 ==================================== */
 footer {
 	background-color: grey;
+	height: 100px;
 	display: block;
 }
 
+.copyright {
+	text-align: center;
+}
 /* =================================
   Media Queries
 ==================================== */
